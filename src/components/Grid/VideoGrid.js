@@ -1,5 +1,5 @@
 import React from 'react';
-import VideoGrideItem from './VideoGrideItem';
+import VideoGrideItem from './VideoGridItem';
 
 const VideoGrids = () => {
     return (
