@@ -1,7 +1,7 @@
 import React from 'react';
 import RelatedVideoListItem from './RelatedVideoListItem';
 
-const RelatedVideoList = () => {
+const RelatedVideoList = ({id,tags}) => {
     return (
         <section className="pt-12">
         <section className="pt-12">
