@@ -21,7 +21,7 @@ const Video = () => {
 
  let content = null;
 
- const {link,title} = video
+ const {id,link,title,tags} = video || {}
 
  if(isLoading && !isError) content = <Loading/>;
 
@@ -41,7 +41,7 @@ const Video = () => {
       <VideoDescription video = {video}/>
       
   </div>
-  <RelatedVideoList/>
+  <RelatedVideoList currentVideoId={id} tags={tags}/>
  
 </div>
  }
