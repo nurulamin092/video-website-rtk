@@ -8,10 +8,12 @@ const VideoGrids = () => {
     const dispatch = useDispatch();
     const {videos,isLoading,isError,error} = useSelector(state=>state.videos);
 
+    const {tags,search} = useSelector(state=>state.filter);
+
     useEffect(()=>{
-        dispatch(fetchVideos())
+        dispatch(fetchVideos({tags,search}))
     },
-    [dispatch])
+    [dispatch,tags,search])
 
     let content;
 
